@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    overflow: hidden;
+    background: #131313;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#memeButton{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 700;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all ease-in-out 0.3s;
+    border-radius: 25px;
+    background: #F8485E;
+}
+
+#memeButton i{
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+#memeButton:hover{
+    transform: scale(1.1);
+    background: #f8374d;
+    cursor: pointer;
+}
+
+#memes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    overflow: scroll;
+    width: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #1f1f1f;
+    margin-bottom: 20px;
+}
+
+#memes div{
+    position: relative;
+    height: 70%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 25px;
+    width: 300px;
+    background: #2E2E2E;
+    transition: all 0.3s ease-in-out;
+}
+
+#memes div:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background: #333333;
+}
+
+#memes div h4{
+    padding: 5px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    border-radius: 8px;
+    margin: 0;
+    font-weight: 400;
+}
+
+#memes div p{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    text-align:center;
+}
+
+img{
+    position: absolute;
+    bottom: 50px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    transition: 300ms;
+}
+
+img:hover{
+    border-radius: 0px;
+    transform: scale(1.03);
+}
+
+@media (max-width: 1400px){
+    #memes div{
+        height: 100%;
+        
+    }
+}
+
+@media (max-width: 1000px){
+
+    #memes div{
+        height: 90%;
+        
+    }
+
+    #memes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 100%;
+        overflow: scroll;
+        width: 100%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #1f1f1f;
+        margin-bottom: 20px;
+    }
+
+    #memeButton{
+        width: 80%;
+    }
+}
+
